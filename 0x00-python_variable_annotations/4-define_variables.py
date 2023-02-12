@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-a: int = 1  # a:int variable
-pi: float = 3.142  # pi:float variable
-i_understand_annotations: bool = True  # i_und_annot:bool 
-school: str = "Holberton"  # school:str variable
+'''Declaring variables 
+:a: int variable
+:pi: float variable
+:i_understand_annotation: boolean variable
+:school: str variable
+'''
+a: int = 1
+pi: float = 3.14
+i_understand_annotations: bool = True
+school: str = "Holberton"
