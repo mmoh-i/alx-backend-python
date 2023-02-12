@@ -5,6 +5,6 @@ def add(x: float, y: float) -> float:
     which will accept
     :x: float and
     :y: as both float
-    and also return a float
+     and also return a float
     '''
     return x + y
