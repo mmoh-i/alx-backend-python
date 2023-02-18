@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-def sum_list(inputlist: [float]) -> float:
+from typing import List
+def sum_list(inputlist: List[float]) -> float:
     """
     sumlist function takes in a flaot list
     :inpitlist: float 
