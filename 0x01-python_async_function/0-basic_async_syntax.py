@@ -1,8 +1,13 @@
+#!/usr/bin/python3 env 
 import asyncio
 import random
 
 
 async def wait_random(max_delay=10):
+    """asynchronous function
+    wait to delay randomly base on
+    the range of arg passed
+    """
     i = random.uniform(0, max_delay + 1)
     await asyncio.sleep(i)
     #print(max_delay)
