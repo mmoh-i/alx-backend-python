@@ -1,14 +1,13 @@
-#!/usr/bin/python3 env 
+#!/usr/bin/env python3
+""" Async Task 0.
+"""
 import asyncio
 import random
 
 
-async def wait_random(max_delay: int=10) -> float:
-    """asynchronous function
-    wait to delay randomly base on
-    the range of arg passed
+async def wait_random(max_delay: int = 10) -> float:
+    """Waits for a random number of seconds.
     """
-    rndm_time = random.random() * max_delay
-    await asyncio.sleep(rndm_time)
-    
-    return rndm_time
+    wait_time = random.random() * max_delay
+    await asyncio.sleep(wait_time)
+    return wait_time
