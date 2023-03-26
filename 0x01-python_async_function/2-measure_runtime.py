@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
-"""Async Task 2
+"""Measure the time.
 """
 import asyncio
 import time
 
 
-wait_n = __import__('1-concurrent_coroutines.py').wait_n
+wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
-async def measure_time(n: int, max_delay: int) -> float:
-    """ asyncio to Measure the runtime.
+def measure_time(n: int, max_delay: int) -> float:
+    """Returns average runtime of wait_n.
     """
     start_time = time.time()
-    await.run(wait_n(n, max_delay))
-    final_time = (start_time - time.time()) / n
-    return final_time
+    asyncio.run(wait_n(n, max_delay))
+    return (time.time() - start_time) / n
