@@ -3,9 +3,10 @@
 """
 import asyncio
 import random
+from typing import AsyncGenerator
 
 
-async def async_generator() -> float:
+async def async_generator() -> AsyncGenerator[int, None]:
     """Coroutine that takes
     no arguments
     """
