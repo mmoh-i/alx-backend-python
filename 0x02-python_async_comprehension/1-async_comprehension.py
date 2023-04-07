@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 """ 1. Async Comprehensions
 """
-import asynchio
+import asyncio
+import random
+from typing import Generator
 
-async_generator = __import__('0-async_generator.py').async_generator
+async_generator = __import__('0-async_generator').async_generator
 
 
-async def async_comprehension() -> 
+async def async_comprehension() -> Generator[int, None, None]:
+    """Collect 10 random
+    reutrns 10 random
+    """
+    copr = [i async for i in async_generator()]
+    return copr
