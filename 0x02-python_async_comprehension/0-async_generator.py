@@ -9,6 +9,7 @@ async def async_generator():
     """Coroutine that takes
     no arguments
     """
-    for i in random.randint(0, 10):
-        await.sleep(1)
-        yield i
+    for i in range(10):
+
+        await asyncio.sleep(1)
+        yield random.uniform(0, 10)
