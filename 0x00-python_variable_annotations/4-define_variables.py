@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''Declaring variables 
+'''Declaring variables
 :a: int variable
 :pi: float variable
 :i_understand_annotation: boolean variable
