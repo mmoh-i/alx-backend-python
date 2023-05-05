@@ -3,6 +3,7 @@
 1. Basic annotations - concat
 mandatory"""
 
+
 def concat(str1: str, str2: str) -> str:
     '''
     Concat typed annotation
