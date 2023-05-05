@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""
-    sumlist function takes in a flaot list
-    :inpitlist: float
-    and also returns sum of the float list
-    """
+"""5. Complex types - list of floats """
 from typing import List
 
 
